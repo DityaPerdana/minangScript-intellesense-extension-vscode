@@ -1,0 +1,233 @@
+{
+  "Variable Declaration": {
+    "prefix": "buek",
+    "body": [
+      "buek ${1:variableName} = ${2:value};"
+    ],
+    "description": "Create a variable declaration"
+  },
+  "Let Declaration": {
+    "prefix": "ambiak",
+    "body": [
+      "ambiak ${1:variableName} = ${2:value};"
+    ],
+    "description": "Let variable declaration"
+  },
+  "Const Declaration": {
+    "prefix": "tagak",
+    "body": [
+      "tagak ${1:CONSTANT_NAME} = ${2:value};"
+    ],
+    "description": "Const variable declaration"
+  },
+  "Function Declaration": {
+    "prefix": "karojo",
+    "body": [
+      "karojo ${1:functionName}(${2:parameters}) {",
+      "\t${3:// function body}",
+      "\tjadi ${4:result};",
+      "}"
+    ],
+    "description": "Create a function"
+  },
+  "If Statement": {
+    "prefix": "kalau",
+    "body": [
+      "kalau (${1:condition}) {",
+      "\t${2:// code block}",
+      "}"
+    ],
+    "description": "If statement"
+  },
+  "If Else Statement": {
+    "prefix": "kalaulain",
+    "body": [
+      "kalau (${1:condition}) {",
+      "\t${2:// if block}",
+      "} lain {",
+      "\t${3:// else block}",
+      "}"
+    ],
+    "description": "If-else statement"
+  },
+  "While Loop": {
+    "prefix": "selamo",
+    "body": [
+      "selamo (${1:condition}) {",
+      "\t${2:// loop body}",
+      "}"
+    ],
+    "description": "While loop"
+  },
+  "For Loop": {
+    "prefix": "untuak",
+    "body": [
+      "untuak (buek ${1:i} = 0; ${1:i} < ${2:length}; ${1:i}++) {",
+      "\t${3:// loop body}",
+      "}"
+    ],
+    "description": "For loop"
+  },
+  "Print Statement": {
+    "prefix": "cetak",
+    "body": [
+      "cetak(${1:value});"
+    ],
+    "description": "Print/console log"
+  },
+  "Print Message": {
+    "prefix": "cetakpesan",
+    "body": [
+      "cetak.pesan(${1:message});"
+    ],
+    "description": "Print info message"
+  },
+  "Print Error": {
+    "prefix": "cetakrusak",
+    "body": [
+      "cetak.rusak(${1:error});"
+    ],
+    "description": "Print error message"
+  },
+  "Print Warning": {
+    "prefix": "cetakameh",
+    "body": [
+      "cetak.ameh(${1:warning});"
+    ],
+    "description": "Print warning message"
+  },
+  "Return Statement": {
+    "prefix": "jadi",
+    "body": [
+      "jadi ${1:value};"
+    ],
+    "description": "Return statement"
+  },
+  "Number Constructor": {
+    "prefix": "angko",
+    "body": [
+      "angko(${1:value})"
+    ],
+    "description": "Create a number"
+  },
+  "String Constructor": {
+    "prefix": "kato",
+    "body": [
+      "kato(${1:value})"
+    ],
+    "description": "Create a string"
+  },
+  "Boolean Constructor": {
+    "prefix": "kabanaran",
+    "body": [
+      "kabanaran(${1:value})"
+    ],
+    "description": "Create a boolean"
+  },
+  "Gotong Royong Function": {
+    "prefix": "gotongRoyong",
+    "body": [
+      "gotongRoyong ${1:functionName}(${2:parameters}) {",
+      "\t// Collaborative function - working together",
+      "\t${3:// implementation}",
+      "\tjadi ${4:result};",
+      "}"
+    ],
+    "description": "Collaborative function following Gotong Royong principle"
+  },
+  "Musyawarah Function": {
+    "prefix": "musyawarah",
+    "body": [
+      "musyawarah ${1:decisionName}(${2:options}) {",
+      "\t// Consensus-based decision making",
+      "\t${3:// discussion logic}",
+      "\tjadi ${4:consensus};",
+      "}"
+    ],
+    "description": "Consensus-based function following Musyawarah Mufakat"
+  },
+  "Alam Takambang Function": {
+    "prefix": "alamTakambang",
+    "body": [
+      "alamTakambang ${1:learningFunction}(${2:input}) {",
+      "\t// Learning from nature and experience",
+      "\t${3:// adaptive logic}",
+      "\tjadi ${4:wisdom};",
+      "}"
+    ],
+    "description": "Learning function following Alam Takambang Jadi Guru"
+  },
+  "Adat Basandi Function": {
+    "prefix": "adatBasandi",
+    "body": [
+      "adatBasandi ${1:ethicalFunction}(${2:parameters}) {",
+      "\t// Ethical and value-based implementation",
+      "\t${3:// ethical checks}",
+      "\tjadi ${4:ethicalResult};",
+      "}"
+    ],
+    "description": "Ethical function following Adat Basandi Syarak"
+  },
+  "Main Function Template": {
+    "prefix": "utama",
+    "body": [
+      "// MinangScript Program",
+      "// Inspired by Minangkabau wisdom",
+      "",
+      "karojo utama() {",
+      "\tcetak(\"Salamaik datang ka MinangScript!\");",
+      "\t${1:// your code here}",
+      "}",
+      "",
+      "utama();"
+    ],
+    "description": "Main function template with Minangkabau greeting"
+  },
+  "Class-like Structure": {
+    "prefix": "objek",
+    "body": [
+      "karojo ${1:ClassName}(${2:parameters}) {",
+      "\t// Constructor-like function",
+      "\tbuek ini = {};",
+      "\t",
+      "\t// Properties",
+      "\tini.${3:property} = ${4:value};",
+      "\t",
+      "\t// Methods",
+      "\tini.${5:method} = karojo() {",
+      "\t\t${6:// method implementation}",
+      "\t};",
+      "\t",
+      "\tjadi ini;",
+      "}"
+    ],
+    "description": "Object/class-like structure"
+  },
+  "Error Handling": {
+    "prefix": "tanganiError",
+    "body": [
+      "kalau (${1:errorCondition}) {",
+      "\tcetak.rusak(\"Error: ${2:error message}\");",
+      "\tjadi kosong;",
+      "}"
+    ],
+    "description": "Error handling pattern"
+  },
+  "Array Declaration": {
+    "prefix": "daftar",
+    "body": [
+      "buek ${1:arrayName} = [${2:items}];"
+    ],
+    "description": "Array declaration"
+  },
+  "Object Declaration": {
+    "prefix": "objekData",
+    "body": [
+      "buek ${1:objectName} = {",
+      "\t${2:key}: ${3:value},",
+      "\t${4:// add more properties}",
+      "};"
+    ],
+    "description": "Object declaration"
+  }
+}

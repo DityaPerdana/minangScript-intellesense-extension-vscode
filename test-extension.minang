@@ -1,0 +1,145 @@
+// MinangScript Test File untuk Extension
+// File ini mendemonstrasikan semua fitur IntelliSense
+
+// Variable declarations
+buek nama = "MinangScript";
+ambiak umur = 25;
+tagak PI = 3.14159;
+
+// Basic function
+karojo salam(nama) {
+    cetak("Salamaik datang, " + nama + "!");
+    jadi bana;
+}
+
+// Gotong royong - collaborative function
+gotongRoyong hitungBersama(a, b) {
+    buek hasil = angko(a) + angko(b);
+    cetak.hijau("Hasil gotong royong: " + kato(hasil));
+    jadi hasil;
+}
+
+// Musyawarah - consensus function
+musyawarah ambilKeputusan(pilihan) {
+    kalau (pilihan.length > 1) {
+        cetak.pesan("Musyawarah untuk mencapai mufakat...");
+        jadi pilihan[0]; // consensus reached
+    } lain {
+        cetak.ameh("Perlu lebih banyak pilihan");
+        jadi kosong;
+    }
+}
+
+// Alam takambang - learning function
+alamTakambang belajarDariAlamA(data) {
+    // Learning from nature and adapting
+    buek pelajaran = {};
+    untuak (buek i = 0; i < data.length; i++) {
+        pelajaran[i] = data[i] * 2; // adaptation
+    }
+    cetak.biru("Pelajaran dari alam: ");
+    cetak.urai(pelajaran);
+    jadi pelajaran;
+}
+
+// Adat basandi - ethical function
+adatBasandi validasiEtika(input) {
+    kalau (input === kosong || input === salah) {
+        cetak.rusak("Input tidak etis atau kosong");
+        jadi salah;
+    }
+    
+    kalau (kato(input).length < 3) {
+        cetak.ameh("Input terlalu pendek, tidak memenuhi standar");
+        jadi salah;
+    }
+    
+    cetak.hijau("Input memenuhi standar etika");
+    jadi bana;
+}
+
+// Control structures demonstration
+karojo demoKontrol() {
+    // If-else
+    kalau (umur >= 18) {
+        cetak("Sudah dewasa");
+    } lain {
+        cetak("Masih muda");
+    }
+    
+    // While loop
+    buek counter = 0;
+    selamo (counter < 3) {
+        cetak("Loop: " + kato(counter));
+        counter++;
+    }
+    
+    // For loop
+    untuak (buek i = 0; i < 3; i++) {
+        cetak("For loop: " + kato(i));
+    }
+}
+
+// Array and object usage
+karojo demoDataTypes() {
+    buek daftar = [1, 2, 3, "empat", bana];
+    buek objek = {
+        nama: "Test",
+        angka: 42,
+        aktif: bana
+    };
+    
+    cetak.urai(daftar);
+    cetak.urai(objek);
+    
+    // Type constructors
+    buek angka = angko("123");
+    buek teks = kato(456);
+    buek boolean = kabanaran("true");
+    
+    cetak("Angka: " + kato(angka));
+    cetak("Teks: " + teks);
+    cetak("Boolean: " + kato(boolean));
+}
+
+// Error handling example
+karojo tanganiError(input) {
+    kalau (input === kosong) {
+        cetak.rusak("Error: Input kosong!");
+        jadi kosong;
+    }
+    
+    kalau (typeof input !== "string") {
+        cetak.ameh("Peringatan: Input bukan string");
+        jadi kato(input);
+    }
+    
+    jadi input;
+}
+
+// Main function
+karojo utama() {
+    cetak.pesan("=== Demo MinangScript Extension ===");
+    
+    salam("Dunia");
+    hitungBersama(10, 20);
+    
+    buek pilihan = ["opsi1", "opsi2"];
+    ambilKeputusan(pilihan);
+    
+    buek dataAlam = [1, 2, 3, 4, 5];
+    belajarDariAlamA(dataAlam);
+    
+    validasiEtika("input yang baik");
+    
+    demoKontrol();
+    demoDataTypes();
+    
+    tanganiError("test input");
+    tanganiError(kosong);
+    
+    cetak.hijau("Demo selesai!");
+}
+
+// Run the main function
+utama();

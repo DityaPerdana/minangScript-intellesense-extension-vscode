@@ -1,0 +1,16 @@
+node_modules/
+out/
+*.vsix
+.vscode-test/
+.nyc_output/
+coverage/
+.DS_Store
+*.log
+.vscode-test-web/
+
+# Development files
+src/*.js
+test/
+
+# Package lock
+package-lock.json

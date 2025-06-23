@@ -1,0 +1,13 @@
+{
+  "iconDefinitions": {
+    "minang-file": {
+      "iconPath": "./minang-file-icon.png"
+    }
+  },
+  "fileExtensions": {
+    "minang": "minang-file"
+  },
+  "languageIds": {
+    "minangscript": "minang-file"
+  }
+}
