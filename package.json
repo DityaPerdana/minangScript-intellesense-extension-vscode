@@ -2,7 +2,7 @@
   "name": "minangscript-intellisense",
   "displayName": "MinangScript IntelliSense",
   "description": "IntelliSense, syntax highlighting, and auto-completion for MinangScript programming language",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "publisher": "dtyminang",
   "icon": "icon.png",
   "engines": {
